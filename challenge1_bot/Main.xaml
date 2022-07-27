@@ -1,0 +1,343 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="674,3316.66666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="53">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.Core.Activities.DateModifications</x:String>
+      <x:String>UiPath.Activities.System.Workflow.Business</x:String>
+      <x:String>UiPath.Excel.Model</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="41">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Collections.Immutable</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="creates data table with correct fields&#xA;" sap:VirtualizedContainerService.HintSize="552,3252" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd1:DataTable" Name="dtIn" />
+      <Variable x:TypeArguments="x:Int32" Name="rowsOfData">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:Int32" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="sd1:DataTable" Name="dt_data" />
+      <Variable x:TypeArguments="x:Int32" Name="in_numEntries" />
+      <Variable x:TypeArguments="x:String" Name="supplierName">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String" Value="" />
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="s:String[]" Name="supplierNameList" />
+      <Variable x:TypeArguments="x:String" Name="supplierNamesString" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <TryCatch sap2010:Annotation.AnnotationText="Try to delete dataset if it already exists. This is to re-write new data set entries each time the bot is run.&#xA;" DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="510,380.666666666667" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <TryCatch.Try>
+        <ui:DeleteFileX DisplayName="Delete File" sap:VirtualizedContainerService.HintSize="434,80.6666666666667" sap2010:WorkflowViewState.IdRef="DeleteFileX_1" Path="datasets\dataset1.xlsx" />
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="438.666666666667,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <ui:BuildDataTable DataTable="[dt_data]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="334,58.6666666666667" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;PO_x0020_Number&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Purchase_x0020_Type&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Supplier_x0020_ID&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Payment_x0020_Due_x0020_Date&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Payment_x0020_Account&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Payment_x0020_Type_x0020_&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Transaction_x0020_Status&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Payment_x0020_Amount&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Supplier_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;" />
+      </TryCatch.Finally>
+    </TryCatch>
+    <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="510,244.666666666667" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Enter how many entries you would like in the dataset: " Title="Number of Entries in dataset">
+      <ui:InputDialog.Result>
+        <OutArgument x:TypeArguments="x:Int32">[in_numEntries]</OutArgument>
+      </ui:InputDialog.Result>
+    </ui:InputDialog>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: Random Company Name List - Randommer" sap:VirtualizedContainerService.HintSize="510,1238.66666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" InteractionMode="DebuggerApi" ScopeGuid="7d003003-b129-49da-957d-8c86918c3ce1" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1020.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_9">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'How many names?'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d003003-b129-49da-957d-8c86918c3ce1" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://randommer.io/random-business-names" DesignTimeRectangle="554, 635, 810, 57" ElementType="InputBox" FriendlyName="'20'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' class='form-control' aaname='How many names?' /&gt;" Guid="3a613bc9-edc5-417a-bdf0-3e54f52b5f95" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAy4AAAA9CAYAAABLGT0DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUISURBVHhe7d3PaxR3HMfh/nue4kGJSBD1YBBTQSkmHozgKR4CuQQCQUgJSHtQKfGgF73Yg4I2iAZslFjRxPijQVltlZBP97s7iZtkVyvF2S/T54E3hNnZ3F/Mzsx3f3/4GGZmZmZmZjlPuJiZmZmZWfYTLmZmZmZmlv3ahsuz5y9jbv5x/HZ/Pu7c+93MzMzMzOybLrVHapDUIu0aZVO4vK29b5z86Mli/e93sba2FgAAAN9aao/UIKlFUpOkNmltlU3hkk5YevG6+CoAAED5UpOkNmltlY1wSZdkUt0AAAB0W2qT1p+NbYRL83LMu+I0AACA7klt0nrVZSNc0s0w7mkBAABykNokNcq2cEl38gMAAOQiNYpwAQAAsiZcAACA7AkXAAAge8IFAADInnABAACyJ1wAAIDsCRcAACB7wgUAAMiecAEAALInXAAAgOwJFwAAIHvCBQAAyJ5wAQAAsidcAACA7AkXAAAge6WGy9Ktn2L4h/7o2dkbO+rr2T8Yw+fvxNJqcUI7q8tx6/xIHNrX1/jOjj39MTA6E7Ovis8BAIDKKylcluP6SP9GeAyNnovx8U8x0nPoXMzWilNb1e7F+KHinCMjMTY5EcNHDzbDZ/epmFkszgMAACqtpHCpB8jOvhi6tBC11qsrqytxY6wZNHunHhQH132M2YmD9c/64vgvT4tjTUuXTzXj5cTVWCqOAQAA1VVSuCzE7O12l1TqVq7FUIqQwxfjSXGo4elMHErHT1+LP4tDn6zEldP1z3YejMmtvQMAAFROSeHyOelqTIqQczFbHEnSVZV0JWb4evvgqV0faXx+4OfNV2MAAIDqySdc9k3HXHEk/UzsxmiKmcG40Ok+lj8uxoH0vdGb8aE4BAAAVFP3w2VuOnbVA6RnrDVAluPCsRQuE3Gr0xPH3tyI4RQu7nMBAIDK6264rNYD5UQKlP4t96q0//nYZu2u1AAAAFXUvXCpR0vzEcl9cfzycnFw3VeEy2fPAQAAqqA74fLqTowfS+9nKR6RXBz+5CvCZevTyAAAgMopPVxqd6djYHc9OPYMxo93OzwiOR7E5L4vhMtfN+NsChf3uAAAQOWVGC61eHjpTOPFkT2nZ+Jhp2ZpWImZkylcTsXMq+LQVoszMZDCZeJecQAAAKiq0sKl+bb7vhiYetDmp2HbzU2lt+b3xtjt4sAW6+9x6fSeFwAAoDrKCZfi7fg9ozf/VbQ0rD8mue131t+cfyaurBSHAACAyiolXNbfgt/p6kl7yzFTPCr57K+b66R59aY39k5teoYyAABQUaWEy+xECpDe6Nn/fRw4/JlNbwmRxasxtCd9ty92HR2JscmJGD6SnkZW/18nr8ZSp5dTAgAAlVJquHxx7W60f7MQV8bPxN5GwKT4GYyzlxeiJloAAOB/o5RwAQAA+C+ECwAAkD3hAgAAZE+4AAAA2RMuAABA9oQLAACQPeECAABkT7gAAADZEy4AAED2hAsAAJA94QIAAGRPuAAAANlrGy6/3Z+PtbW14hQAAIDuSW2SGmVbuMzNP463tXfFaQAAAN2T2iQ1yrZwefb8ZTx6slicBgAA0D2pTVKjbAuXtFQ0Sy9eF6cCAACULzVJ69WWtE3h8rb2vnFCqpt0acY9LwAAQBlSe6QGSS3SvI3lfedwWV+6JJNOTjfDpDv5zczMzMzMvuVSe6QGaf15WOvahouZmZmZmVk++xj/ACWAm9Xhp0I5AAAAAElFTkSuQmCC" InformativeScreenshot="6a7d2a5e695f0c472691243e5b0caccd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Random Company Name List - Randommer' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="853, 587, 211, 36" ElementType="Text" FriendlyName="'How many names?'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='How many names?' check:innerText='How many names?' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'How many names?'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,220" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="7d003003-b129-49da-957d-8c86918c3ce1" Text="1000" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://randommer.io/random-business-names" DesignTimeRectangle="554, 635, 810, 57" ElementType="InputBox" FriendlyName="'20'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='number' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='number' class='form-control' aaname='How many names?' /&gt;" Guid="04498fd3-d6d7-42b3-a62d-b075947760a4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAy4AAAA9CAYAAABLGT0DAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUISURBVHhe7d3PaxR3HMfh/nue4kGJSBD1YBBTQSkmHozgKR4CuQQCQUgJSHtQKfGgF73Yg4I2iAZslFjRxPijQVltlZBP97s7iZtkVyvF2S/T54E3hNnZ3F/Mzsx3f3/4GGZmZmZmZjlPuJiZmZmZWfYTLmZmZmZmlv3ahsuz5y9jbv5x/HZ/Pu7c+93MzMzMzOybLrVHapDUIu0aZVO4vK29b5z86Mli/e93sba2FgAAAN9aao/UIKlFUpOkNmltlU3hkk5YevG6+CoAAED5UpOkNmltlY1wSZdkUt0AAAB0W2qT1p+NbYRL83LMu+I0AACA7klt0nrVZSNc0s0w7mkBAABykNokNcq2cEl38gMAAOQiNYpwAQAAsiZcAACA7AkXAAAge8IFAADInnABAACyJ1wAAIDsCRcAACB7wgUAAMiecAEAALInXAAAgOwJFwAAIHvCBQAAyJ5wAQAAsidcAACA7AkXAAAge6WGy9Ktn2L4h/7o2dkbO+rr2T8Yw+fvxNJqcUI7q8tx6/xIHNrX1/jOjj39MTA6E7Ovis8BAIDKKylcluP6SP9GeAyNnovx8U8x0nPoXMzWilNb1e7F+KHinCMjMTY5EcNHDzbDZ/epmFkszgMAACqtpHCpB8jOvhi6tBC11qsrqytxY6wZNHunHhQH132M2YmD9c/64vgvT4tjTUuXTzXj5cTVWCqOAQAA1VVSuCzE7O12l1TqVq7FUIqQwxfjSXGo4elMHErHT1+LP4tDn6zEldP1z3YejMmtvQMAAFROSeHyOelqTIqQczFbHEnSVZV0JWb4evvgqV0faXx+4OfNV2MAAIDqySdc9k3HXHEk/UzsxmiKmcG40Ok+lj8uxoH0vdGb8aE4BAAAVFP3w2VuOnbVA6RnrDVAluPCsRQuE3Gr0xPH3tyI4RQu7nMBAIDK6264rNYD5UQKlP4t96q0//nYZu2u1AAAAFXUvXCpR0vzEcl9cfzycnFw3VeEy2fPAQAAqqA74fLqTowfS+9nKR6RXBz+5CvCZevTyAAAgMopPVxqd6djYHc9OPYMxo93OzwiOR7E5L4vhMtfN+NsChf3uAAAQOWVGC61eHjpTOPFkT2nZ+Jhp2ZpWImZkylcTsXMq+LQVoszMZDCZeJecQAAAKiq0sKl+bb7vhiYetDmp2HbzU2lt+b3xtjt4sAW6+9x6fSeFwAAoDrKCZfi7fg9ozf/VbQ0rD8mue131t+cfyaurBSHAACAyiolXNbfgt/p6kl7yzFTPCr57K+b66R59aY39k5teoYyAABQUaWEy+xECpDe6Nn/fRw4/JlNbwmRxasxtCd9ty92HR2JscmJGD6SnkZW/18nr8ZSp5dTAgAAlVJquHxx7W60f7MQV8bPxN5GwKT4GYyzlxeiJloAAOB/o5RwAQAA+C+ECwAAkD3hAgAAZE+4AAAA2RMuAABA9oQLAACQPeECAABkT7gAAADZEy4AAED2hAsAAJA94QIAAGRPuAAAANlrGy6/3Z+PtbW14hQAAIDuSW2SGmVbuMzNP463tXfFaQAAAN2T2iQ1yrZwefb8ZTx6slicBgAA0D2pTVKjbAuXtFQ0Sy9eF6cCAACULzVJ69WWtE3h8rb2vnFCqpt0acY9LwAAQBlSe6QGSS3SvI3lfedwWV+6JJNOTjfDpDv5zczMzMzMvuVSe6QGaf15WOvahouZmZmZmVk++xj/ACWAm9Xhp0I5AAAAAElFTkSuQmCC" InformativeScreenshot="6a7d2a5e695f0c472691243e5b0caccd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Random Company Name List - Randommer' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="853, 587, 211, 36" ElementType="Text" FriendlyName="'How many names?'" FullSelectorArgument="&lt;webctrl tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='LABEL' type='' class='' aaname='How many names?' check:innerText='How many names?' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Get names'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7d003003-b129-49da-957d-8c86918c3ce1" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://randommer.io/random-business-names" DesignTimeRectangle="862, 514, 192, 72" ElementType="Button" FriendlyName="'Get names'" FullSelectorArgument="&lt;webctrl id='btnGet' tag='BUTTON' type='submit' /&gt;" FuzzySelectorArgument="&lt;webctrl id='btnGet' tag='BUTTON' type='submit' class='btn btn-primary btn-lg my-2' aaname='Get names' check:innerText='Get names' /&gt;" Guid="3f797e3f-6ba3-41da-bf95-7f29f52259ae" ImageBase64="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" InformativeScreenshot="2d14b38f4c49a05e1ebe8b7852ef2e59.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Random Company Name List - Randommer' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="917, 373, 83, 36" ElementType="Text" FriendlyName="'Culture'" FullSelectorArgument="&lt;webctrl aaname='Culture' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Culture' tag='LABEL' type='' class='' check:innerText='Culture' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAoCAYAAACLvGZ4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAOmSURBVGhD7ZjPSxtBFMf7r/Qg6MXkUk8KHkIOEcGAh3oxILj0YC9aCqU5tAoJOSgpNFioeAgEEggo7UEqFQIVlAYUpYGA0oDEEIhSYiBEL9/OmmzyZrL5ZRzQOIcPEt/M25nPzL6d3Wel6xso5KDkSkTJlYiSKxElVyJKrkSUXIkouRJRciWi5EpEyZWIkisRJVciD0LuvmcAz/sMNITOzNs9NprLLRZwuheBb94Fh32ICLDixbgTmnsN2/cg4snJzf+J4M24lUzanMU98/6d0FKuvsgHm1h3z8H2Kc7HHjCmcvN7XtiIwGbIlxuHz0Linscs928ELjoZxuB0ANvJDPLFShu2k3Inx4h+WcDqb9L3jrSSu0jG8ojlXiI6RybCsHl2kTOkSuJpyE0G4aATsQdw2K5YVkqq/RhiuUiHtYZxc7mCVBPKOTIIzZD/z0SQJtety0PjZ+wupTF94c534Z8dQb/xm+bKsrvVMwfHsPEsGoJtmt29P1LI03YVOLmJdWftQgxXOMM1bkovyHWvwGcnv4nc9E8vHEK5pNjebuFU2Iic3NgS7WCFr5N62gtyRQy5R4G2HvDiZiRyhUHW1b4W3LtcA0FOXc29T7lWOJZ2kK7swFy2wP4KzyGLhvWDy3L/qxS+u2212Cgro0ZuBic3OkuS9NngP6o1bEkvyJ1YQ0J8xlxs4TVp4wym+Djb1SPVuIboeS3GlQV+kgPQNior1A69ILcuN4OT1wp+7Jzc3LcFvvFksH4lG9GrcoV5NaeJ3FJ2ExrX2ApXSLgNGiEMYkroJ55EpMnt8yJGN8TVDt7T/p3KFdp0coLi5TIOP4/VLnYLK/Lvgtg/uRTe0OIIeTT4jROFOFA7m2S2HMsdBeve+u4sV897QeNif31DJMtjLWaw/UGYT6dyr4/hHyVtLC/hi6WQu6rEqy68iHLjNpFbKqYQmm39wcagJkkYhEC/hc/ZvtzGeY0cdeWMwq57+0Jg0LHccn4uhyniuM3k6ugrvuRsIyEvqeEg2G4Lfb1rzWX1OqqZ5q3mKLIFoIf/KmwXhyPd1dxbCthfbuWjXbkGZ2y7Ly9gamIMgyRR/7ATjlcfsRqOV8+EBulYANp45fXRMgKXZxOJf9080HQKSGx4oXHflPkcpYtjhNwu2IbKscFJ9lr6S6+PXT7QCLnkDlb1b9vV1192HbsTU/MriBpnX0JzuYquUHIlouRKRMmViJIrESVXIkquRJRciSi50rjBfwNZpDclpp5fAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <ui:GetOCRText WordsInfo="{x:Null}" DisplayName="Get OCR Text 'PRE  result'" sap:VirtualizedContainerService.HintSize="334,168" sap2010:WorkflowViewState.IdRef="GetOCRText_1">
+              <ui:GetOCRText.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <ui:GoogleOCR AllowedCharacters="{x:Null}" DeniedCharacters="{x:Null}" FilterRegion="{x:Null}" Invert="{x:Null}" Language="{x:Null}" Output="{x:Null}" Profile="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" DisplayName="Tesseract OCR" ExtractWords="False" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="GoogleOCR_1" Image="[Image]" />
+                </ActivityFunc>
+              </ui:GetOCRText.OCREngine>
+              <ui:GetOCRText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a300cf33-b246-4b3a-904d-fcfdd89c8630" InformativeScreenshot="c9a556e4c00f1f581b25d9c6fc206bc8" Selector="&lt;webctrl tag='PRE' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:GetOCRText.Target>
+              <ui:GetOCRText.Text>
+                <OutArgument x:TypeArguments="x:String">[supplierNamesString]</OutArgument>
+              </ui:GetOCRText.Text>
+            </ui:GetOCRText>
+            <Assign sap:VirtualizedContainerService.HintSize="334,62" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="s:String[]">[supplierNameList]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="s:String[]">[supplierNamesString.Split({System.Environment.NewLine}, StringSplitOptions.none)]</InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="19eafa8769306a5c0ea9c74345a0d693.png" Selector="&lt;html app='chrome.exe' title='Random Company Name List - Randommer' /&gt;" Url="https://randommer.io/random-business-names" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <ui:InterruptibleWhile sap2010:Annotation.AnnotationText="Runs as many times as number of desired entries. Adjust the condition number for more or less entries." Condition="[rowsOfData &lt; in_numEntries]" CurrentIndex="[rowsOfData]" DisplayName="While" sap:VirtualizedContainerService.HintSize="510,820" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+      <ui:InterruptibleWhile.Body>
+        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="473.333333333333,605.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence.Variables>
+            <Variable x:TypeArguments="x:Int32" Name="poNumber" />
+            <Variable x:TypeArguments="s:String[]" Default="[{&quot;Consulting&quot;,&quot;Subscription&quot;,&quot;Contract&quot;}]" Name="purchaseType" />
+            <Variable x:TypeArguments="x:Int32" Name="supplierID" />
+            <Variable x:TypeArguments="s:DateTime" Default="[now]" Name="paymentDueDate" />
+            <Variable x:TypeArguments="s:String[]" Default="[{&quot;Checking&quot;,&quot;Savings&quot;,&quot;Credit Card&quot;}]" Name="paymentAccType" />
+            <Variable x:TypeArguments="x:Int32" Name="paymentAccNumber" />
+            <Variable x:TypeArguments="s:String[]" Default="[{&quot;ACH&quot;,&quot;CHECK&quot;}]" Name="paymentType" />
+            <Variable x:TypeArguments="s:String[]" Default="[{&quot;Verified&quot;,&quot;Not Verified&quot;}]" Name="transactionStatus" />
+            <Variable x:TypeArguments="x:Double" Name="paymentAmount" />
+            <Variable x:TypeArguments="s:String[]" Name="supplierNameSuffixes">
+              <Variable.Default>
+                <mva:VisualBasicValue x:TypeArguments="s:String[]" ExpressionText="{}{&quot;LLC&quot;,  &quot;Inc&quot;, &quot;Incorporated&quot;, &quot;Corp&quot;, &quot;Corporation&quot;, &quot;Co&quot;, &quot;Company&quot;, &quot;Ltd&quot;, &quot;Limited&quot;, &quot;Association&quot;, &quot;Assoc&quot;, &quot;Club&quot;, &quot;Foundation&quot;, &quot;Fund&quot;, &quot;Institute&quot;, &quot;Society&quot;, &quot;Union&quot;, &quot;Syndicate&quot;}" />
+              </Variable.Default>
+            </Variable>
+          </Sequence.Variables>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:MultipleAssign sap2010:Annotation.AnnotationText="Variables are assigned using System.Random and logic" DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="431.333333333333,252.666666666667" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+            <ui:MultipleAssign.AssignOperations>
+              <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:Int32">[poNumber]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:Int32">[new System.Random(System.DateTime.Now.Millisecond).Next(100000000,999999999)]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:Int32">[supplierID]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:Int32">[new System.Random(System.DateTime.Now.Millisecond).Next(10000,99999)]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="s:DateTime">[paymentDueDate]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="s:DateTime">[paymentDueDate.AddDays(new Random(DateTime.Now.Millisecond).Next(7,730))]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:Int32">[paymentAccNumber]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:Int32">[new Random(System.DateTime.Now.Millisecond).Next(1000,9999)]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+                <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                  <ui:AssignOperation.To>
+                    <OutArgument x:TypeArguments="x:Double">[paymentAmount]</OutArgument>
+                  </ui:AssignOperation.To>
+                  <ui:AssignOperation.Value>
+                    <InArgument x:TypeArguments="x:Double">[new Random(DateTime.Now.Millisecond).Next(100, 99999) + new Random().NextDouble()]</InArgument>
+                  </ui:AssignOperation.Value>
+                </ui:AssignOperation>
+              </scg:List>
+            </ui:MultipleAssign.AssignOperations>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:MultipleAssign>
+          <ui:AddDataRow DataRow="{x:Null}" sap2010:Annotation.AnnotationText="Add entries to output datatable" ArrayRow="[{poNumber.ToString, purchaseType(new Random().Next(purchaseType.Length)), supplierID.ToString, paymentDueDate.ToString(&quot;MM/dd/yyyy&quot;), (paymentAccType(new Random().Next(paymentAccType.Length))+&quot;(.. &quot; + paymentAccNumber.ToString + &quot;)&quot;), paymentType(new Random().Next(paymentType.length)), transactionStatus(new Random().Next(transactionStatus.Length)), String.Format(&quot;${0:0.00}&quot;, paymentAmount).ToString, supplierNameList(new Random(DateTime.Now.Millisecond).Next(supplierNameList.Length))}]" DataTable="[dt_data]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="431.333333333333,220.666666666667" sap2010:WorkflowViewState.IdRef="AddDataRow_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:AddDataRow>
+        </Sequence>
+      </ui:InterruptibleWhile.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:InterruptibleWhile>
+    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" sap2010:Annotation.AnnotationText="Write dataset datatable to the dataset excel file" DataTable="[dt_data]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="510,145.333333333333" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="Sheet1" WorkbookPath="datasets\dataset1.xlsx">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:WriteRange>
+    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="510,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[String.Format(&quot;Dataset Build Complete. Total entries: {0}&quot;, rowsOfData)]" />
+  </Sequence>
+</Activity>
